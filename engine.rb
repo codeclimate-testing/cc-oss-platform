@@ -18,6 +18,10 @@ class Engine
   def bar
     "somebody"
   end
+
+  def is_this_here?
+    "not yet!"
+  end
   
   def hello
     if hello
