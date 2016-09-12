@@ -22,6 +22,10 @@ class Engine
   def is_this_here?
     "not yet!"
   end
+
+  def this_line_is_so_long
+    "                                                                             "
+  end
   
   def hello
     if hello
