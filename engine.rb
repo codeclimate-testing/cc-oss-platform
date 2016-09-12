@@ -26,13 +26,7 @@ class Engine
   def hello
     if hello
       if hello
-        if hello
-          if hello
-            if hello
-              "bye?                                                                  so long."
-            end
-          end
-        end
+        "bye?"
       end
     end
   end
