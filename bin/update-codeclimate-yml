@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+#
+# Use this to update .codeclimate.yml to enable all engines present in the
+# passed YAML file, which is assumed to be builder's current engines manifest.
+#
+###
+require "yaml"
+
+if ARGV.empty?
+  $stderr.puts "usage: bin/update-codeclimate-yml path/to/engines.yml"
+  exit 64
+end
+
+config = YAML.load_file(".codeclimate.yml")
+manifest = YAML.load_file(ARGV.first)
+
+config["engines"] = manifest.keys.each_with_object({}) do |name, engines|
+  engines[name] = { "enabled" => true }
+end
+
+# Preserve some manual tweaks
+config["engines"]["checkstyle"]["enabled"] = false
+config["engines"]["duplication"]["config"] = {
+  "languages" => { "ruby" => { "paths" => ["**/**.rb"] } }
+}
+config["engines"]["rubymotion"]["enabled"] = false
+config["engines"]["rubocop"]["config_file"] = ".ruby-style.yml"
+config["engines"].delete("rubocop-v35")
+
+File.write(".codeclimate.yml", YAML.dump(config))

@@ -1,0 +1,10 @@
+require: rubocop-rspec
+
+AllCops:
+  DisabledByDefault: true
+
+Metrics/LineLength:
+  Enabled: true
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
