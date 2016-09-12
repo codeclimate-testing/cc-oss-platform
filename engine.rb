@@ -16,7 +16,7 @@ class Engine
   end
   
   def bar
-    sup = "somebody"
+    "somebody"
   end
   
   def hello
