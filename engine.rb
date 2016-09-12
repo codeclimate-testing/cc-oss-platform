@@ -27,15 +27,7 @@ class Engine
             if hello
               if hello
                 if hello
-                  if hello
-                    if hello
-                      if hello
-                        if hello
-                          "bye?"
-                        end
-                      end
-                    end
-                  end
+                  "bye?"
                 end
               end
             end
