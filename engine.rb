@@ -24,7 +24,7 @@ class Engine
   end
 
   def this_line_is_so_long
-    "                                                                             "
+    "                                                                "
   end
   
   def hello
