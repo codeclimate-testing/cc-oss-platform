@@ -30,6 +30,7 @@ class Engine
           if hello
             if hello
               "bye?                                                                  so long."
+              "are you here?"
             end
           end
         end
