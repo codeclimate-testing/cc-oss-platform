@@ -31,6 +31,7 @@ class Engine
             if hello
               "bye?                                                                  so long."
               "are you here?"
+              "will refresh find you?"
             end
           end
         end
