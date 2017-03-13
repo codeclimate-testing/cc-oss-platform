@@ -26,6 +26,9 @@ engines:
     enabled: true
     exclude_paths:
     - foo/some_symlink.rb
+
+  flog:
+    enabled: true
   gnu-complexity:
     enabled: true
   gofmt:
