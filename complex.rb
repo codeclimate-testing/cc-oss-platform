@@ -47,9 +47,11 @@ class Complex
       end
     end
 
+
+    baba = true
     @users = @users.order('id asc') if @filters.empty?
     @advanced_link = @location.blank? && @max_rate.blank? && @availability.blank?
     render :index
-    
+
   end
 end
