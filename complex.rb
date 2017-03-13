@@ -22,6 +22,28 @@ class Complex
     text
   end
 
+  def flababa
+    if true
+      if false
+        if true
+          if hell
+            a = 3
+          else
+            a = 2
+          end
+        else
+          a = 4
+        end
+      else
+        a = 17
+      end
+    else
+      a = 18
+    end
+
+    a
+  end
+
   def search
     filter_mapping = {"cost" => "rcost", "quality" => "rquality", "time" => "rtime", "experience" => "rexperience", "communication" => "rcommunication"}
     @filters = params[:filter].split(",") rescue []
