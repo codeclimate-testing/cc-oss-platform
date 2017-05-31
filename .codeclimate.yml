@@ -49,8 +49,6 @@ engines:
     enabled: true
   phpcodesniffer:
     enabled: true
-  phpmd:
-    enabled: true
   radon:
     enabled: true
   reek:
