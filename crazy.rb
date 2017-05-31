@@ -3,4 +3,8 @@ class Crazy
     yasss = unused_variable
     true
   end
+
+  def foo bar = bar
+    p bar
+  end
 end
