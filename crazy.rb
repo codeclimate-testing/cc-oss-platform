@@ -1,6 +1,15 @@
 class Crazy
   def foobar
-    y = unused_variable
-    false
+    yasss = unused_variable
+    true
+  end
+
+  def foo bar = bar
+    p bar
+  end
+
+  def baba
+    f = 'heck'
+    puts f
   end
 end
