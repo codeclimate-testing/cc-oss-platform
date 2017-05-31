@@ -7,4 +7,9 @@ class Crazy
   def foo bar = bar
     p bar
   end
+
+  def baba
+    f = 'heck'
+    puts f
+  end
 end
