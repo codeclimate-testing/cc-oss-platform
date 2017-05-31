@@ -1,6 +1,6 @@
 class Crazy
   def foobar
-    y = unused_variable
+    yasss = unused_variable
     false
   end
 end
